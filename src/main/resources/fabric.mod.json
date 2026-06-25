@@ -4,7 +4,7 @@
   "version": "${version}",
   "name": "Skycore",
   "description": "Skycore is a mod created for Hypixel Skyblock.",
-  "authors": [DarkGamingShadow],
+  "authors": ["DarkGamingShadow"],
   "contact": {},
   "license": "MIT",
   "icon": "assets/skycore/icon.png",
