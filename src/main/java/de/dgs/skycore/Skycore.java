@@ -6,5 +6,6 @@ public class Skycore implements ModInitializer {
 
     @Override
     public void onInitialize() {
+
     }
 }
