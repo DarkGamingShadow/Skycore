@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "skycore",
+  "version": "${version}",
+  "name": "Skycore",
+  "description": "Skycore is a mod created for Hypixel Skyblock.",
+  "authors": [DarkGamingShadow],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/skycore/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "fabric-datagen": [
+      "de.dgs.skycore.client.SkycoreDataGenerator"
+    ],
+    "client": [
+      "de.dgs.skycore.client.SkycoreClient"
+    ],
+    "main": [
+      "de.dgs.skycore.Skycore"
+    ]
+  },
+  "mixins": [
+    "skycore.mixins.json",
+    {
+      "config": "skycore.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric-api": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
